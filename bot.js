@@ -22,7 +22,7 @@ function postMessage() {
   var botResponses, botResponse, options, body, botReq;
   botResponses=["Fuck you mean "+emoji.get('b'), "Frig off ya cocksucker",
                 "aight, lemme get dat "+emoji.get('b')+"ONELESS"];
-  botResponse = botResponses[1];
+  botResponse = botResponses[Math.floor(Math.random()*3)];
 
   options = {
     hostname: 'api.groupme.com',
